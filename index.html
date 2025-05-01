@@ -99,11 +99,7 @@
             color: var(--primary-color);
         }
         
-        tr:nth-child(even) {
-            background-color: #0f3460;
-        }
-        
-        tr:nth-child(odd) {
+        tr {
             background-color: #1a1a2e;
         }
         
@@ -247,7 +243,7 @@
     <div class="container">
         <div class="section">
             <div class="section-header">
-                <h2><span class="emoji">🐀</span> 1. Team Formation and Planning (Required)</h2>
+                <h2>1. Team Formation and Planning (Required)</h2>
             </div>
             
             <div class="team-info">
@@ -294,7 +290,7 @@
         
         <div class="section">
             <div class="section-header">
-                <h2><span class="emoji">🐀</span> 2. Research Algorithms (Required)</h2>
+                <h2>2. Research Algorithms (Required)</h2>
             </div>
             
             <h3>Documented Cryptographic Algorithms</h3>
@@ -343,7 +339,7 @@
         
         <div class="section">
             <div class="section-header">
-                <h2><span class="emoji">🐀</span> 3. Algorithm Selection & Implementation (Required)</h2>
+                <h2>3. Algorithm Selection & Implementation (Required)</h2>
             </div>
             
             <h3>Documented Algorithm Selection Rationale</h3>
@@ -392,7 +388,7 @@
         
         <div class="section">
             <div class="section-header">
-                <h2><span class="emoji">🐀</span> 4. Testing & Iteration (First Round) (Required)</h2>
+                <h2>4. Testing & Iteration (First Round) (Required)</h2>
             </div>
             
             <h3>Documented Red-Teaming (First Round)</h3>
@@ -454,7 +450,7 @@
         
         <div class="section">
             <div class="section-header">
-                <h2><span class="emoji">🐀</span> 5. Creative Enhancements (Required)</h2>
+                <h2>5. Creative Enhancements (Required)</h2>
             </div>
             
             <h3>Documented Creative Enhancements</h3>
@@ -486,7 +482,7 @@
         
         <div class="section">
             <div class="section-header">
-                <h2><span class="emoji">🐀</span> 6. Testing & Iteration (After Enhancements) (Required)</h2>
+                <h2>6. Testing & Iteration (After Enhancements) (Required)</h2>
             </div>
             
             <h3>Documented Red-Teaming (Second Round)</h3>
@@ -520,7 +516,7 @@
         
         <div class="section">
             <div class="section-header">
-                <h2><span class="emoji">🐀</span> 7. Documentation & Reflection (Required)</h2>
+                <h2>7. Documentation & Reflection (Required)</h2>
             </div>
             
             <h3>Project Step Summaries</h3>
@@ -603,13 +599,41 @@
         
         <div class="section">
             <div class="section-header">
-                <h2><span class="emoji">🐀</span> Deliverables Checklist</h2>
+                <h2>Deliverables Checklist</h2>
             </div>
-            <ul>
-                <li class="checkmark"> Cryptography Site Tool linked on each team member's portfolio site (3 pts)</li>
-                <li class="checkmark"> Documentation and Reflections linked on each team member's portfolio site (7 pts)</li>
+            <ul class="deliverables-list">
+                <li>
+                    <span class="checkmark-icon">✅</span>
+                    <span class="deliverable-text">Cryptography Site Tool linked on each team member's portfolio site (3 pts)</span>
+                </li>
+                <li>
+                    <span class="checkmark-icon">✅</span>
+                    <span class="deliverable-text">Documentation and Reflections linked on each team member's portfolio site (7 pts)</span>
+                </li>
             </ul>
         </div>
+        
+        <style>
+            .deliverables-list li {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 15px;
+                padding-left: 0;
+            }
+            
+            .deliverables-list li::before {
+                content: none;
+            }
+            
+            .checkmark-icon {
+                margin-right: 15px;
+                flex-shrink: 0;
+            }
+            
+            .deliverable-text {
+                flex-grow: 1;
+            }
+        </style>
     </div>
     
     <footer>
